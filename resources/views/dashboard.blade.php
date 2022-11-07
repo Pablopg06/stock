@@ -1,4 +1,28 @@
-<x-app-layout>
+@extends('adminlte::page')
+
+@section('title', 'Stock')
+
+@section('content_header')
+    <h1>
+        <strong>
+            Stock
+        </strong>
+    </h1>
+@stop
+
+@section('content')
+    <p>Bienvenidos al Sistema de stock.</p>
+@stop
+
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop
+
+@section('js')
+    <script> console.log('Hi!'); </script>
+@stop
+
+{{--<x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Stock') }}
@@ -10,5 +34,5 @@
             
         </div>
     </div>
-</x-app-layout>
+</x-app-layout>--}}
 
